@@ -56,7 +56,7 @@ const Products = () => {
               <div
                 key={index}
                 className={cn(
-                  "relative p-6 rounded-3xl overflow-hidden flex flex-col text-center transition-all group",
+                  "relative p-5 rounded-3xl overflow-hidden flex flex-col text-center transition-all group",
                   isBest
                     ? "border-2 border-(--brand-primary) bg-(--brand-primary)/5 shadow-lg scale-[1.02]"
                     : "border bg-white hover:shadow-xl"
@@ -70,12 +70,13 @@ const Products = () => {
                 )}
 
                 {/* Image */}
-                <div className="relative rounded-2xl w-full h-56 overflow-hidden mb-4">
+                <div className="relative rounded-3xl w-full h-56 overflow-hidden mb-4">
                   <Image
                     src={product.image}
                     alt={product.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
 
                   {/* Optional subtle overlay for premium feel */}

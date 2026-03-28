@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/nav-bar";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={cn(inter.variable,"font-sans")}>
         <NavBar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
