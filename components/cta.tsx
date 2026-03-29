@@ -7,7 +7,6 @@ const CTA = () => {
     <section className="w-full">
       <div className="max-w-7xl mx-auto px-4">
         <div className="bg-(--brand-primary) rounded-3xl px-6 sm:px-12 py-12 lg:py-24 text-center text-white shadow-lg">
-          
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-semibold">
             Ready to Transform <br className="hidden sm:block" />
@@ -21,21 +20,17 @@ const CTA = () => {
           </p>
 
           {/* Buttons */}
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center max-w-48 md:max-w-sm mx-auto">
             {/* Primary Button */}
-            <Button className="cursor-pointer bg-white text-(--brand-primary) hover:bg-white/90 rounded-2xl p-6 text-md font-semibold">
+            <Button className="w-full cursor-pointer bg-white text-(--brand-primary) hover:bg-white/90 rounded-2xl p-6 text-md font-semibold">
               Get Started Now
             </Button>
 
             {/* Secondary Button */}
-            <Button
-              className="cursor-pointer bg-transparent border-(--brand-secondary) rounded-2xl p-6 text-md font-semibold"
-            >
+            <Button className="w-full cursor-pointer bg-transparent border-(--brand-secondary) rounded-2xl p-6 text-md font-semibold">
               Speak to an Expert
             </Button>
           </div>
-
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-[calc(100vh-64px)] flex items-center">
+    <section className="w-full lg:min-h-screen flex items-center">
       <div className="w-full h-[stretch] max-w-340 mx-auto px-4 py-8 lg:py-0 lg:px-12 grid grid-cols-1  lg:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div className="flex flex-col gap-6 text-center lg:text-left items-center lg:items-start order-last lg:order-first">
