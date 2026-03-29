@@ -5,12 +5,10 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t mt-20">
+    <footer className="w-full border-t mt-10 lg:mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
         {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-semibold">ArogyaAura</h3>
@@ -25,26 +23,37 @@ const Footer = () => {
             </Button>
           </div>
 
-          {/* Links */}
-          <div>
-            <h4 className="text-sm font-semibold mb-4">Product</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#">Features</Link></li>
-              <li><Link href="#">How it Works</Link></li>
-              <li><Link href="#">Pricing</Link></li>
-              <li><Link href="#">FAQs</Link></li>
-            </ul>
-          </div>
+          <div className="grid grid-cols-2">
+            <div>
+              <h4 className="text-sm font-semibold mb-4">Product</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link href="#features">Features</Link>
+                </li>
+                <li>
+                  <Link href="#how-it-works">How it Works</Link>
+                </li>
+                <li>
+                  <Link href="#faqs">FAQs</Link>
+                </li>
+              </ul>
+            </div>
 
-          {/* Company */}
-          <div>
-            <h4 className="text-sm font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#">About Us</Link></li>
-              <li><Link href="#">Careers</Link></li>
-              <li><Link href="#">Contact</Link></li>
-              <li><Link href="#">Privacy Policy</Link></li>
-            </ul>
+            {/* Company */}
+            <div>
+              <h4 className="text-sm font-semibold mb-4">Company</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link href="#">About Us</Link>
+                </li>
+                <li>
+                  <Link href="#">Contact</Link>
+                </li>
+                <li>
+                  <Link href="#">Privacy Policy</Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Newsletter */}
@@ -72,13 +81,11 @@ const Footer = () => {
 
         {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} ArogyaAura. All rights reserved.
           </p>
         </div>
-
       </div>
     </footer>
   );

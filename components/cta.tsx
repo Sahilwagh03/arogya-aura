@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 const CTA = () => {
   return (
     <section className="w-full">
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-(--brand-primary) rounded-3xl px-6 sm:px-12 py-24 text-center text-white shadow-lg">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="bg-(--brand-primary) rounded-3xl px-6 sm:px-12 py-12 lg:py-24 text-center text-white shadow-lg">
           
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-semibold">
